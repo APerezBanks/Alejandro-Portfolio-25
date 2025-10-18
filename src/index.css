@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-nunito: "Nunito Sans", sans-serif;
+   --font-hand: "Caveat", cursive;
+}
+
+:root {
+  font-family: var(--font-nunito);
+}
