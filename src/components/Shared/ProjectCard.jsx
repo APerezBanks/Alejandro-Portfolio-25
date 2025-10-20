@@ -44,9 +44,9 @@ const ProjectCard = ({ project }) => {
             href={project.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 text-center py-2 border border-gray-900 text-white bg-gray-900 rounded-lg hover:bg-gray-700 transition duration-200"
+            className="flex-1 text-center py-2 border border-gray-900 text-white bg-pink-900 rounded-lg hover:bg-gray-700 transition duration-200"
           >
-            Source Code
+            Codigo
           </a>
         </div>
       </div>

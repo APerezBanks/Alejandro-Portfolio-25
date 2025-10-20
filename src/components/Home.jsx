@@ -19,9 +19,11 @@ function Home() {
           </h2>
 
           <p className="handwritten text-2xl text-gray-600 mb-6">
-            Apasionado por el Front-End y el diseño UX/UI. Construyo apps web
-            ágiles y escalables con React, Next.js y Node.js.
+            Apasionado por el Front-End y el diseño UX/UI.<br></br>Construyo
+            apps web ágiles y escalables con las tecnologías mas actuales.
             <br></br>
+            Combinando mi experiencia como programador, junto con la
+            inteligencia artificial mas actual.
             <br></br>
             <strong>Mi objetivo: </strong>que la tecnología se sienta simple,
             fluida y útil.{" "}

@@ -2,8 +2,8 @@
 const projectsData = [
   {
     id: 1,
-    title: "Shopify Redesign",
-    description: "Modern e-commerce platform with Stripe integration.",
+    title: "Innova Space",
+    description: ".",
     image: "/images/shopify-redesign.jpg", // Asegúrate de colocar tus imágenes en la carpeta 'public'
     technologies: ["React", "Tailwind CSS", "Stripe API", "Node.js"],
     liveUrl: "#",

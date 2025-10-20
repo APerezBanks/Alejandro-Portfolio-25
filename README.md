@@ -48,7 +48,7 @@ Si usas Formspree, pega tu URL única en el atributo action del formulario en Co
 
 LinkedIn: [https://www.linkedin.com/in/alexander-perez-banks/]
 
-GitHub: [Tu Perfil de GitHub]
+GitHub: [https://github.com/APerezBanks]
 
 
 
