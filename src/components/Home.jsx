@@ -10,20 +10,22 @@ function Home() {
         {/* Columna Izquierda: Texto de Bienvenida */}
         <div className="w-full lg:w-1/2 text-left">
           <p className="handwritten text-3xl text-gray-700 mb-4">
-            Hola Mundo! Soy Alejandro
+            Hola Mundo!{" "}
+            <strong className="text-4xl tracking-wider">Soy Alejandro </strong>
           </p>
-          <h2 className="text-5xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+          <h2 className="text-5xl md:text-5xl font-extrabold tracking-widest text-gray-900 leading-tight mb-6">
             Desarrollador <br></br>{" "}
             <span className="text-pink-700">FRONT-END</span>{" "}
             {/* Color de acento para "Full Stack" */}
           </h2>
 
-          <p className="handwritten text-2xl text-gray-600 mb-6">
+          <p className="handwritten text-3xl text-gray-600 mb-6">
             Apasionado por el Front-End y el diseño UX/UI.<br></br>Construyo
             apps web ágiles y escalables con las tecnologías mas actuales.
             <br></br>
             Combinando mi experiencia como programador, junto con la
             inteligencia artificial mas actual.
+            <br></br>
             <br></br>
             <strong>Mi objetivo: </strong>que la tecnología se sienta simple,
             fluida y útil.{" "}
@@ -33,13 +35,13 @@ function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/projects"
-              className="inline-block px-8 py-3 bg-gray-900 text-white font-bold rounded-lg hover:bg-gray-700 transition duration-200 shadow-lg text-center"
+              className="inline-block px-8 py-3 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-400  transition duration-200 shadow-lg text-center"
             >
               VER MIS PROYECTOS
             </Link>
             <Link
               to="/contact"
-              className="inline-block px-8 py-3 border border-gray-900 text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition duration-200 text-center"
+              className="inline-block px-8 py-3 border border-gray-900 text-gray-900 font-bold rounded-lg hover:bg-gray-400 hover:text-white transition duration-200 text-center"
             >
               CONTACTAR
             </Link>

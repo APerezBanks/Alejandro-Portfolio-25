@@ -39,7 +39,6 @@ const skills = [
   // Back-End
   { name: "Node.js", logo: "🟢", color: "bg-green-600" },
   { name: "MySQL", logo: "🐬", color: "bg-blue-600" },
-  { name: "API REST", logo: "🔗", color: "bg-gray-700" },
   { name: "Express.js", logo: "EX", color: "bg-gray-800" },
 
   // Lenguajes y lógica general
@@ -50,15 +49,8 @@ const skills = [
   { name: "Figma", logo: "F", color: "bg-purple-500" },
   { name: "Wireframes", logo: "📝", color: "bg-gray-500" },
   { name: "Responsive Web", logo: "📱", color: "bg-teal-400" },
-  { name: "Photoshop", logo: "PS", color: "bg-blue-800" },
-  { name: "Canva", logo: "🎨", color: "bg-pink-300" },
-
-  // Extras / Audio / IA
   { name: "AI / Machine Learning", logo: "🤖", color: "bg-indigo-500" },
-  { name: "Pro Tools", logo: "🎚️", color: "bg-gray-900" },
-  { name: "Ableton Live", logo: "🎹", color: "bg-green-700" },
   { name: "Git / GitHub", logo: "🐙", color: "bg-gray-800" },
-  { name: "Netlify / Vercel", logo: "🚀", color: "bg-purple-600" },
 ];
 
 function Bio() {
@@ -79,7 +71,7 @@ function Bio() {
         </div>
 
         {/* Columna Derecha: Texto y Habilidades */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-2/3 text-center lg:text-left flex flex-col items-center lg:items-start">
           {/* Título Principal */}
           <h3 className="text-4xl font-bold mb-6 text-gray-800 leading-tight">
             {bioData.title}
@@ -100,7 +92,7 @@ function Bio() {
             Key Skills
           </h4>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-8">
             {skills.map((skill) => (
               <div
                 key={skill.name}
