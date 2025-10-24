@@ -30,7 +30,7 @@ const Header = () => {
         {/* Iconos sociales */}
         <div className="flex space-x-6">
           <a
-            href="URL_LINKEDIN"
+            href="https://www.linkedin.com/in/alexander-perez-banks/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-900 hover:text-blue-600 transition duration-200"
@@ -38,19 +38,19 @@ const Header = () => {
             <FaLinkedin size={28} />
           </a>
           <a
-            href="URL_GITHUB"
+            href="https://github.com/APerezBanks"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-900 hover:text-yellow-500 transition duration-200"
           >
             <FaGithub size={28} />
           </a>
-          <a
+          {/* <a
             href="mailto:TU_CORREO"
             className="text-gray-900 hover:text-red-600 transition duration-200"
           >
             <FaEnvelope size={28} />
-          </a>
+          </a> */}
         </div>
       </div>
 

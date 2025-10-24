@@ -21,7 +21,7 @@ const projectsData = [
   {
     id: 3,
     title: "Print Forge",
-    description: "Website for the search of 3D printing services and freelance designers.",
+    description: "Ejemplo de pagina web para una empresa ficticia de impresiones 3D, con tienda online y sistema de personalización de productos.Con busqueda por palabra clave, y usando NextJs",
     image: "./images/Printforge_proyecto.png",
     technologies:["⚛️ React", "🖤 Next.js", "🎨 TailwindCSS", "🟢 Node.js", "💻 TypeScript", "🔧 ESLint", "💾 PostCSS"]
 ,
@@ -40,12 +40,40 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "",
-    description: "",
-    image: "",
-    technologies: [""],
-    liveUrl: "#",
-    sourceUrl: "#"
+    title: "Pokemon Visualizer",
+    description: "Buscador de Pokemons que consume la PokeAPI, con diseño responsivo y animaciones CSS.",
+    image: "./images/PokeAPI.png",
+    technologies: ["🌐 HTML5", "🎨 CSS3", "⚡ JavaScript (ES6+)", "🔗 APIs", "☁️ Netlify", "🧠 DOM manipulation"],
+    liveUrl: "https://visualizadorpokemon.netlify.app/",
+    sourceUrl: "https://github.com/APerezBanks/Visualizador-Pokemon-v2"
+  },
+  {
+    id: 6,
+    title: "Cat meme Generator",
+    description: "Muestra un gif aleatorio de un gato dependiendo del animo que selecciones.",
+    image: "./images/catgenerator.png",
+    technologies: ["🌐 HTML5","🎨 CSS3","⚡ Vanilla JavaScript", "🐱 Local JSON data","🎞️ Interactive UI (Modals)","☁️ Netlify / GitHub Pages"],
+    liveUrl: "https://cat-meme-generator-scrimba.netlify.app/",
+    sourceUrl: "https://github.com/APerezBanks/Cat-meme-Generator"
+  },
+  
+  {
+    id: 7,
+    title: "Drum Kit / Soundboard",
+    description: "Mini aplicación web que simula una caja de ritmos (drum kit) o soundboard. Permite reproducir sonidos de percusión al hacer clic en los botones o al presionar las teclas correspondientes del teclado.",
+    image: "./images/soundboard.png",
+    technologies: ["🌐 HTML5","🎨 CSS3","⚡ Vanilla JS","🎧 Audio Playback Control","🖱️ Keyboard & Mouse Events","💥 DOM Interactivity","🥁 Digital Drum Machine"],
+    liveUrl: "https://radiant-haupia-8b5756.netlify.app/",
+    sourceUrl: "https://github.com/APerezBanks/drum-kit-challenge"
+  },
+  {
+    id: 8,
+    title: "Random Password Generator",
+    description:" Generador de contraseñas aleatorias incluyendo caractesteres especiales,simbolos, números y letras mayúsculas y minúsculas.",
+    image: "./images/passgen.png",
+    technologies: ["🌐 HTML5","🎨 CSS3","⚡ Vanilla JavaScript","🔢 Random String Generation","📋 Clipboard API (execCommand)","💥 DOM Manipulation","🔐 Password Generator UI"],
+    liveUrl: "https://random-password-generator-apb.netlify.app/",
+    sourceUrl: "https://github.com/APerezBanks/Password-Generator"
   },
   
   // Añade más proyectos aquí...

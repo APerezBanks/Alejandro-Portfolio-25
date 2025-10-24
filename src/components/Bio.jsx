@@ -106,7 +106,7 @@ function Bio() {
 
           {/* Botón Descargar CV */}
           <a
-            href={bioData.resumeLink}
+            href="https://drive.google.com/file/d/1sDYjod1euKCFOmm5CH9f6bDYrFGw0uSy/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-10 px-8 py-3 border border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-pink-700 hover:text-white transition duration-200"

@@ -10,13 +10,12 @@ function Home() {
         {/* Columna Izquierda: Texto de Bienvenida */}
         <div className="w-full lg:w-1/2 text-left">
           <p className="handwritten text-3xl text-gray-700 mb-4">
-            Hola Mundo!{" "}
-            <strong className="text-4xl tracking-wider">Soy Alejandro </strong>
+            Hola Mundo!<br></br>
+            <strong className="text-5xl tracking-wider">Soy Alejandro </strong>
           </p>
-          <h2 className="text-5xl md:text-5xl font-extrabold tracking-widest text-gray-900 leading-tight mb-6">
-            Desarrollador <br></br>{" "}
-            <span className="text-pink-700">FRONT-END</span>{" "}
-            {/* Color de acento para "Full Stack" */}
+          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight sm:tracking-widest text-gray-900 leading-tight mb-6 break-words">
+            Desarrollador <br />
+            <span className="text-pink-700">FRONT-END</span>
           </h2>
 
           <p className="handwritten text-3xl text-gray-600 mb-6">
