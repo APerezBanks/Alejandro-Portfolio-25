@@ -102,35 +102,29 @@ function Contact() {
         </p>
         <div className="flex justify-center space-x-6">
           <a
-            href="URL_LINKEDIN"
+            href="https://www.linkedin.com/in/alexander-perez-banks/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-900 hover:text-blue-600 transition duration-200"
           >
-            <FaLinkedin size={32} />
+            <FaLinkedin size={46} />
           </a>
           <a
-            href="URL_GITHUB"
+            href="https://github.com/APerezBanks"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-900 hover:text-gray-600 transition duration-200"
+            className="text-gray-900 hover:text-yellow-500 transition duration-200"
           >
-            <FaGithub size={32} />
-          </a>
-          <a
-            href="mailto:TU_CORREO"
-            className="text-gray-900 hover:text-red-600 transition duration-200"
-          >
-            <FaEnvelope size={32} />
+            <FaGithub size={46} />
           </a>
         </div>
 
         {/* Botón Descargar CV (opcional, pero útil) */}
         <a
-          href="#" // Coloca aquí el enlace a tu CV
-          className="inline-block mt-8 px-8 py-3 border border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition duration-200"
+          href="https://drive.google.com/file/d/1sDYjod1euKCFOmm5CH9f6bDYrFGw0uSy/view?usp=drive_link" // Coloca aquí el enlace a tu CV
+          className="inline-block mt-8 px-8 py-3 border bg-pink-700 border-gray-900 text-white font-semibold rounded-lg hover:bg-gray-100 transition duration-200"
         >
-          DOWNLOAD CV
+          Descarga mi CV aqui
         </a>
       </div>
     </section>

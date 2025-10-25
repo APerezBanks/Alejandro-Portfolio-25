@@ -92,11 +92,11 @@ function Bio() {
             Key Skills
           </h4>
 
-          <div className="flex flex-wrap gap-8">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-4">
             {skills.map((skill) => (
               <div
                 key={skill.name}
-                className={`flex flex-col items-center justify-center p-4 w-24 h-24 rounded-lg text-white shadow-md ${skill.color}`}
+                className={`flex flex-col items-center justify-center p-4 h-24 rounded-lg text-white shadow-md ${skill.color}`}
               >
                 <span className="text-3xl mb-1">{skill.logo}</span>
                 <span className="text-xs font-semibold">{skill.name}</span>
@@ -111,7 +111,7 @@ function Bio() {
             rel="noopener noreferrer"
             className="inline-block mt-10 px-8 py-3 border border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-pink-700 hover:text-white transition duration-200"
           >
-            DOWNLOAD RESUME
+            Descarga mi CV aqui
           </a>
         </div>
       </div>

@@ -3,29 +3,33 @@ import certificatesData from "../data/certificados";
 
 const CertificateCard = ({ cert }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
+    <div className="bg-black rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
       {/* Imagen del Certificado */}
       <img
-        className="w-full h-40 object-cover"
+        className="w-full h-40 border-4 rounded-xl object-cover"
         src={cert.image}
         alt={`Certificado de ${cert.title}`}
       />
 
       <div className="p-4">
         {/* Título y Emisor */}
-        <h3 className="text-lg font-bold mb-1 text-gray-800">{cert.title}</h3>
-        <p className="text-sm text-gray-500 mb-2">Emitido por: {cert.issuer}</p>
-        <p className="text-xs font-semibold text-gray-400">{cert.date}</p>
+        <h3 className="text-lg font-bold mb-1 text-stone-50 ">{cert.title}</h3>
+        <p className="text-sm text-stone-100 mb-2">
+          Emitido por: {cert.issuer}
+        </p>
+
+        <p className="text-xs font-semibold text-stone-200">{cert.date}</p>
 
         {/* Enlace de Verificación */}
-        <a
-          href={cert.verifyLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block text-sm font-medium text-gray-900 border-b border-transparent hover:border-gray-900 transition duration-200"
-        >
-          Ver Credencial Completa →
-        </a>
+        <p className="text-xs font-extralight text-stone-300 mt-2">
+          {cert.description}
+        </p>
+
+        <img
+          src={cert.logo}
+          alt={`${cert.issuer} logo`}
+          className="mt-4 w-20 h-20 object-contain rounded-3xl mx-auto"
+        />
       </div>
     </div>
   );
