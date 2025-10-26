@@ -94,6 +94,7 @@ function Contact() {
             className="text-gray-900 hover:text-blue-600 transition duration-200"
           >
             <FaLinkedin size={46} />
+            <p>Linkedin</p>
           </a>
           <a
             href="https://github.com/APerezBanks"
@@ -102,15 +103,16 @@ function Contact() {
             className="text-gray-900 hover:text-yellow-500 transition duration-200"
           >
             <FaGithub size={46} />
+            <p>Github</p>
           </a>
         </div>
 
         {/* Botón Descargar CV  */}
         <a
           href="https://drive.google.com/file/d/1sDYjod1euKCFOmm5CH9f6bDYrFGw0uSy/view?usp=drive_link"
-          className="inline-block mt-8 px-8 py-3 border bg-pink-700 border-gray-900 text-white font-semibold rounded-lg hover:bg-gray-100 transition duration-200"
+          className="inline-block mt-8 px-8 py-3 border bg-pink-700 border-gray-900 text-white font-semibold rounded-lg hover:bg-gray-100 hover:text-black transition duration-200"
         >
-          Descarga mi CV aqui
+          Descarga mi CV
         </a>
       </div>
     </section>

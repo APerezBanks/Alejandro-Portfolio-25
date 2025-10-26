@@ -50,8 +50,8 @@ function Home() {
         {/* Columna Derecha: Imagen */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
           <img
-            className="w-full max-w-md h-auto rounded-lg shadow-xl object-fill"
-            src="/images/alejandro-home-photo.png" // Asegúrate de que esta imagen esté en /public/images
+            className="w-full max-w-md h-auto rounded-lg shadow-xl object-cover"
+            src="/images/idea3.png" // Asegúrate de que esta imagen esté en /public/images
             alt="Alejandro Banks"
           />
         </div>

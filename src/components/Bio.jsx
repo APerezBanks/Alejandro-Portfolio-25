@@ -65,7 +65,7 @@ function Bio() {
         <div className="w-full lg:w-1/3 flex justify-center">
           <img
             className="w-full h-full max-w-sm rounded-xl shadow-lg object-cover"
-            src="/images/unnamed.jpg" // Ajusta la ruta según tu proyecto
+            src="/images/idea4.png" // Ajusta la ruta según tu proyecto
             alt="Alejandro Banks"
           />
         </div>
