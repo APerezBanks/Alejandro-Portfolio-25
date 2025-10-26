@@ -3,10 +3,10 @@ import certificatesData from "../data/certificados";
 
 const CertificateCard = ({ cert }) => {
   return (
-    <div className="bg-black rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 flex flex-col">
+    <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 flex flex-col">
       {/* Imagen del Certificado */}
       <img
-        className="w-full h-50 border-4 rounded-xl object-scale-down"
+        className="w-full h-50 border-2 border-gray-800 rounded-xl object-scale-down"
         src={cert.image}
         alt={`Certificado de ${cert.title}`}
       />
@@ -45,7 +45,7 @@ function Certificates() {
   return (
     <section className="container mx-auto px-6 py-16">
       <h2 className="text-5xl font-extrabold mb-12 text-gray-900">
-        CERTIFICATES & DIPLOMAS
+        CERTIFICADOS & DIPLOMAS
       </h2>
 
       <p className="text-xl text-gray-600 mb-10 max-w-3xl">

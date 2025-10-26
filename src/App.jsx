@@ -5,6 +5,7 @@ import Bio from "./components/Bio";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
+import Footer from "./components/Layout/Footer";
 import "./App.css";
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-
-      {/* <Footer />  cuando este echo activar*/}
+      \
+      <Footer />
     </BrowserRouter>
   );
 }

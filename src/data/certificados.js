@@ -85,12 +85,12 @@ const certificatesData = [
   },
   {
     id: 10,
-    title: "",
-    issuer: "",
-    date: "",
-    image: "/certificados/",
-    description: "",
-    logo: "/images/",
+    title: "PROGAMACION EN PYTHON",
+    issuer: "HACK A BOSS",
+    date: "Octubre 2025, A Coruña, España",
+    image: "/certificados/python-1.png",
+    description: "Certificación de base en Python 3, enfocada en la creación de código eficiente, estructurado y escalable. Sólido dominio de la Programación Orientada a Objetos (POO), incluyendo clases, herencia y encapsulamiento.Habilidad en la manipulación avanzada de estructuras de datos (Listas, Tuplas, Diccionarios), control de flujo (bucles y condicionales), manejo de errores (try/except) y gestión de entrada/salida de archivos. Competencia demostrada en la escritura de código limpio siguiendo el estándar PEP8.",
+    logo: "/images/hablogo.png",
   },
 
   // Añade todos tus demás diplomas aquí...
