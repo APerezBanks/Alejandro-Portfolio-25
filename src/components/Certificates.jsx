@@ -1,10 +1,19 @@
-import React from "react";
+// src/components/Certificates.jsx
+import React, { useState } from "react";
+// Asegúrate de que esta ruta sea correcta para tu archivo de datos
 import certificatesData from "../data/certificados";
+// Asegúrate de que esta ruta sea correcta para tu componente Modal
+import ImageModal from "./Shared/ImageModal";
 
-const CertificateCard = ({ cert }) => {
+// --- 1. Componente Tarjeta Individual ---
+const CertificateCard = ({ cert, onClick }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 flex flex-col">
-      {/* Imagen del Certificado */}
+    // La tarjeta es clicable y llama a la función onClick que abre la modal
+    <div
+      className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1 flex flex-col cursor-pointer"
+      onClick={() => onClick(cert)} // Pasa el objeto completo del certificado
+    >
+      {/* Imagen del Certificado (Miniatura) */}
       <img
         className="w-full h-50 border-2 border-gray-800 rounded-xl object-scale-down"
         src={cert.image}
@@ -20,9 +29,7 @@ const CertificateCard = ({ cert }) => {
             Emitido por: {cert.issuer}
           </p>
           <p className="text-xs font-semibold text-stone-200">{cert.date}</p>
-          <p className="text-xs font-extralight text-stone-300 mt-2">
-            Enlace de Verificación
-          </p>
+
           <p className="text-xs font-extralight text-stone-300 mt-2">
             {cert.description}
           </p>
@@ -41,7 +48,21 @@ const CertificateCard = ({ cert }) => {
   );
 };
 
+// --- 2. Componente Principal (Gestión del Estado) ---
 function Certificates() {
+  // Estado para guardar el objeto completo del certificado seleccionado
+  const [selectedCert, setSelectedCert] = useState(null);
+
+  const openModal = (cert) => {
+    // Guarda el objeto { image, title, description, ... }
+    setSelectedCert(cert);
+  };
+
+  const closeModal = () => {
+    // Cierra la modal al resetear el estado
+    setSelectedCert(null);
+  };
+
   return (
     <section className="container mx-auto px-6 py-16">
       <h2 className="text-5xl font-extrabold mb-12 text-gray-900">
@@ -53,11 +74,26 @@ function Certificates() {
         credenciales obtenidas en tecnologías Front-End clave.
       </p>
 
+      {/* Cuadrícula de Tarjetas */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {certificatesData.map((cert) => (
-          <CertificateCard key={cert.id} cert={cert} />
+          <CertificateCard
+            key={cert.id}
+            cert={cert}
+            onClick={openModal} // Pasa la función para abrir la modal
+          />
         ))}
       </div>
+
+      {/* Componente Modal: Solo se renderiza si selectedCert tiene un valor. 
+        Utilizamos encadenamiento opcional (?) para acceder a las propiedades de forma segura.
+      */}
+      <ImageModal
+        imageUrl={selectedCert?.image || null}
+        title={selectedCert?.title || ""}
+        description={selectedCert?.description || ""}
+        onClose={closeModal}
+      />
     </section>
   );
 }
