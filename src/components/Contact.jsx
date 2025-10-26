@@ -29,7 +29,7 @@ function Contact() {
             method="POST"
             data-netlify="true" // Atributo que Netlify escanea para activar la forma
             netlify-honeypot="bot-field" // Protección anti-spam (honeypot)
-            action="/success.html" // Redirección a la página de éxito (crear public/success.html)
+            action="/success" // Redirige a la página de éxito tras el envío
           >
             {/* CAMPO OCULTO HONEYPOT (requerido para la protección anti-spam de Netlify) */}
             <input type="hidden" name="form-name" value="contact" />
