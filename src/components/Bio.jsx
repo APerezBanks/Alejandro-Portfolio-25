@@ -57,7 +57,7 @@ function Bio() {
   return (
     <section className="container mx-auto px-6 py-16">
       {/* Título de la Sección */}
-      <h2 className="text-5xl font-extrabold mb-12 text-gray-900">ABOUT ME</h2>
+      <h2 className="text-5xl font-extrabold mb-12 text-gray-900">SOBRE MI</h2>
 
       {/* Contenido Principal: Foto | Texto + Habilidades */}
       <div className="flex flex-col lg:flex-row gap-12">

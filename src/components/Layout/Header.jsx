@@ -1,13 +1,23 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaBars,
-  FaTimes,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+
+const navItems = {
+  HOME: "/",
+  BIO: "/bio",
+  PROYECTOS: "/projects", // Mapea PROYECTOS a /projects
+  CERTIFICADOS: "/certificates", // Mapea CERTIFICADOS a /certificates
+  CONTACTO: "/contact", // Mapea CONTACTO a /contact
+};
+
+const navItemsMap = {
+  HOME: "/",
+  BIO: "/bio",
+  PROYECTOS: "/projects", // Apunta a la ruta real de React Router
+  CERTIFICADOS: "/certificates", // Apunta a la ruta real de React Router
+  CONTACTO: "/contact", // Apunta a la ruta real de React Router
+};
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,12 +55,6 @@ const Header = () => {
           >
             <FaGithub size={28} />
           </a>
-          {/* <a
-            href="mailto:TU_CORREO"
-            className="text-gray-900 hover:text-red-600 transition duration-200"
-          >
-            <FaEnvelope size={28} />
-          </a> */}
         </div>
       </div>
 
@@ -66,17 +70,16 @@ const Header = () => {
       {/* Navegación normal en desktop */}
       <nav className="hidden md:block mt-10 border-t border-b border-gray-200 py-3 w-full max-w-lg mx-auto">
         <div className="flex justify-center space-x-10 text-lg font-medium tracking-wide">
-          {["HOME", "BIO", "PROJECTS", "CERTIFICATES", "CONTACT"].map(
-            (item) => (
-              <Link
-                key={item}
-                to={item === "HOME" ? "/" : `/${item.toLowerCase()}`}
-                className="text-gray-900 hover:text-pink-700 hover:underline hover:decoration-pink-700 transition duration-200"
-              >
-                {item}
-              </Link>
-            )
-          )}
+          {Object.entries(navItems).map(([label, path]) => (
+            <Link
+              key={label}
+              to={path} // Usa la ruta correcta (/projects, /certificates, etc.)
+              className="text-gray-900 hover:text-pink-700 hover:underline hover:decoration-pink-700 transition duration-200"
+            >
+              {label}{" "}
+              {/* Usa el texto en español (PROYECTOS, CERTIFICADOS, etc.) */}
+            </Link>
+          ))}
         </div>
       </nav>
 
@@ -91,18 +94,18 @@ const Header = () => {
             transition={{ duration: 0.25 }}
           >
             <div className="flex flex-col space-y-8 text-2xl font-medium">
-              {["HOME", "BIO", "PROJECTS", "CERTIFICATES", "CONTACT"].map(
-                (item) => (
-                  <Link
-                    key={item}
-                    to={item === "HOME" ? "/" : `/${item.toLowerCase()}`}
-                    onClick={closeMenu}
-                    className="text-gray-900 hover:text-pink-700 hover:underline hover:decoration-pink-700 transition duration-200"
-                  >
-                    {item}
-                  </Link>
-                )
-              )}
+              {/* Usamos Object.entries para iterar sobre el mapa de nombres y rutas */}
+              {Object.entries(navItemsMap).map(([label, path]) => (
+                <Link
+                  key={label}
+                  to={path} // <-- Usa la ruta correcta (/projects, /certificates, etc.)
+                  onClick={closeMenu}
+                  className="text-gray-900 hover:text-pink-700 hover:underline hover:decoration-pink-700 transition duration-200"
+                >
+                  {label}{" "}
+                  {/* <-- Muestra el texto en español (PROYECTOS, CONTACTO, etc.) */}
+                </Link>
+              ))}
             </div>
           </motion.div>
         )}
