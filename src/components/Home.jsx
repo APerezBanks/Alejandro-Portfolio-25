@@ -40,9 +40,16 @@ function Home() {
             </Link>
             <Link
               to="/contact"
-              className="inline-block px-8 py-3 border border-gray-900 text-gray-900 font-bold rounded-lg hover:bg-gray-400 hover:text-white transition duration-200 text-center"
+              className="flex items-center justify-center px-8 py-3 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-400 transition duration-200 shadow-lg text-center"
             >
               CONTACTAR
+            </Link>
+
+            <Link
+              to="/extra"
+              className="flex items-center justify-center px-8 py-3 bg-pink-700 text-white font-bold rounded-lg hover:bg-pink-400 transition duration-200 shadow-lg text-center"
+            >
+              Mas sobre mi...
             </Link>
           </div>
         </div>

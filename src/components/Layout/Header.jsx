@@ -9,6 +9,7 @@ const navItems = {
   PROYECTOS: "/projects", // Mapea PROYECTOS a /projects
   CERTIFICADOS: "/certificates", // Mapea CERTIFICADOS a /certificates
   CONTACTO: "/contact", // Mapea CONTACTO a /contact
+  EXTRA: "/extra", // Mapea CONTACTO a /contact
 };
 
 const navItemsMap = {
@@ -17,6 +18,7 @@ const navItemsMap = {
   PROYECTOS: "/projects", // Apunta a la ruta real de React Router
   CERTIFICADOS: "/certificates", // Apunta a la ruta real de React Router
   CONTACTO: "/contact", // Apunta a la ruta real de React Router
+  EXTRA: "/extra", // Apunta a la ruta real de React Router
 };
 
 const Header = () => {
